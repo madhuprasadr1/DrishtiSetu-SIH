@@ -1,0 +1,57 @@
+================================================================================
+DRISHTISETU CLINICAL RETINAL SCREENING REPORT
+Positioning: Explainable AI for Diabetic Retinopathy Screening in Rural India
+================================================================================
+Case ID:                 DS-20260922-926A
+Patient Pseudo-ID:       REP-TEST-001
+Examined Eye:            OD
+Acquisition Timestamp:   2026-09-22 06:43:29
+Camera ID:               Field-Portable-PHC-1
+--------------------------------------------------------------------------------
+IMAGE QUALITY:
+  Quality Status:        GOOD
+  Numerical Score:       100.0 / 100
+  Enhancement Applied:   false
+--------------------------------------------------------------------------------
+DIABETIC RETINOPATHY GRADING:
+  ICDR Severity Grade:   2 - Moderate NPDR (Level 2)
+  Referable DR Status:   true
+  Calibrated DR Risk:    72.35%
+  Softmax Probabilities: [0.008, 0.152, 0.681, 0.152, 0.008]
+  Model Calibration:     Temperature scaling (T = 2.1414)
+--------------------------------------------------------------------------------
+SAFETY & UNCERTAINTY GATING:
+  Confidence Score:      35.82%
+  Uncertainty Score:     75.12%
+  Out-Of-Distribution:   false
+  Safety Status:         HUMAN_REVIEW_REQUIRED
+  Review Mandatory:      true
+--------------------------------------------------------------------------------
+LESION & ANATOMICAL FINDINGS:
+  Microaneurysms:        0 candidates
+  Haemorrhages:          3 candidates
+  Hard Exudates:         1 candidates
+  Soft Exudates:         2 candidates
+  Retinal Vessel Density:16.69%
+--------------------------------------------------------------------------------
+EXPLANATION & DECISION SUPPORT:
+AI SCREENING EVALUATION: MODERATE NPDR (LEVEL 2)
+Calibrated Referable DR Risk: 72.3%  |  Model Confidence: 35.8%  |  Uncertainty: 75.1%
+
+Retinal Lesion Evidence:
+  - Intraretinal haemorrhages: 3 detected.
+  - Hard exudates: 1 detected (lipid deposits indicating vascular leakage).
+  - Soft exudates (cotton wool spots): 2 detected (nerve fiber layer ischemia).
+  - Retinal vascular area density: 16.7% across illuminated field of view.
+
+Clinical Decision Support:
+  - ACTION: Human clinician review required before releasing results.
+    Flagged reasons: high-uncertainty.
+
+DISCLAIMER: DrishtiSetu is an investigational screening aid, not an autonomous diagnostic device. All referable and ambiguous cases must be evaluated by a certified eye care practitioner.
+--------------------------------------------------------------------------------
+HUMAN-IN-THE-LOOP REVIEW:
+  Review Status:         PENDING
+  Reviewer ID:           Pending Ophthalmologist Review
+  Clinician Notes:       
+================================================================================

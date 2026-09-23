@@ -1,0 +1,56 @@
+================================================================================
+DRISHTISETU CLINICAL RETINAL SCREENING REPORT
+Positioning: Explainable AI for Diabetic Retinopathy Screening in Rural India
+================================================================================
+Case ID:                 DS-20260922-B29D
+Patient Pseudo-ID:       P-1005
+Examined Eye:            OD
+Acquisition Timestamp:   2026-09-22 06:45:08
+Camera ID:               Field-Portable-PHC-1
+--------------------------------------------------------------------------------
+IMAGE QUALITY:
+  Quality Status:        BORDERLINE
+  Numerical Score:       85.0 / 100
+  Enhancement Applied:   true
+--------------------------------------------------------------------------------
+DIABETIC RETINOPATHY GRADING:
+  ICDR Severity Grade:   0 - No DR (Level 0)
+  Referable DR Status:   false
+  Calibrated DR Risk:    19.69%
+  Softmax Probabilities: [0.796, 0.178, 0.009, 0.009, 0.009]
+  Model Calibration:     Temperature scaling (T = 2.1414)
+--------------------------------------------------------------------------------
+SAFETY & UNCERTAINTY GATING:
+  Confidence Score:      43.02%
+  Uncertainty Score:     64.99%
+  Out-Of-Distribution:   false
+  Safety Status:         HUMAN_REVIEW_REQUIRED
+  Review Mandatory:      true
+--------------------------------------------------------------------------------
+LESION & ANATOMICAL FINDINGS:
+  Microaneurysms:        0 candidates
+  Haemorrhages:          0 candidates
+  Hard Exudates:         5 candidates
+  Soft Exudates:         8 candidates
+  Retinal Vessel Density:16.72%
+--------------------------------------------------------------------------------
+EXPLANATION & DECISION SUPPORT:
+AI SCREENING EVALUATION: NO DR (LEVEL 0)
+Calibrated Referable DR Risk: 19.7%  |  Model Confidence: 43.0%  |  Uncertainty: 65.0%
+
+Retinal Lesion Evidence:
+  - Hard exudates: 5 detected (lipid deposits indicating vascular leakage).
+  - Soft exudates (cotton wool spots): 8 detected (nerve fiber layer ischemia).
+  - Retinal vascular area density: 16.7% across illuminated field of view.
+
+Clinical Decision Support:
+  - ACTION: Human clinician review required before releasing results.
+    Flagged reasons: high-uncertainty.
+
+DISCLAIMER: DrishtiSetu is an investigational screening aid, not an autonomous diagnostic device. All referable and ambiguous cases must be evaluated by a certified eye care practitioner.
+--------------------------------------------------------------------------------
+HUMAN-IN-THE-LOOP REVIEW:
+  Review Status:         PENDING
+  Reviewer ID:           Pending Ophthalmologist Review
+  Clinician Notes:       
+================================================================================

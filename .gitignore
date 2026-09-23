@@ -1,0 +1,98 @@
+# ==========================================
+# DrishtiSetu - MATLAB / Simulink .gitignore
+# ==========================================
+
+# --- Datasets and Heavy Clinical Data ---
+# Raw medical imaging datasets (APTOS, DRIVE, IDRiD, Messidor-2, OCTA-500)
+data/datasets/
+**/data/datasets/
+data/raw/
+**/data/raw/
+
+# Processed patient cases (large fundus & OCTA scans up to 500MB+)
+data/cases/*.mat
+**/data/cases/*.mat
+
+# Keep metadata, documentation, and dataset splits
+!**/data/PROVENANCE.md
+!**/data/splits/
+!**/data/splits/*.csv
+
+# Large archives and dataset downloads
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.dcm
+*.nii
+*.nii.gz
+
+# --- MATLAB Autosave, Backup, and Crash Dumps ---
+*.asv
+*.m~
+*.bak
+*.autosave
+matlab_crash_dump.*
+matlab.log
+
+# --- Simulink & SimEvents Artifacts ---
+# Simulink cache files and simulation cache folders
+slprj/
+**/slprj/
+*.slxc
+*.slxc.mat
+*.autosave.slx
+*.autosave.mdl
+sfprj/
+**/sfprj/
+
+# --- Code Generation and MEX Binaries ---
+codegen/
+**/codegen/
+*.mex*
+*.mexw64
+*.mexw32
+*.mexa64
+*.mexmaci64
+
+# --- Simulation Runs and Temporary Artifacts ---
+# Ignore timestamped capacity simulation output directories (e.g. results/20260923_*)
+results/20*
+**/results/20*
+
+# --- Runtime Logs ---
+*.log
+drishtisetu_audit.log
+**/data/drishtisetu_audit.log
+
+# --- OS-Specific Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# --- Editor and IDE Settings ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.gemini/
+
+# --- Python (if used for companion ML scripts) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/

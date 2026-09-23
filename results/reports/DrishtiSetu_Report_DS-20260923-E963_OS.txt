@@ -1,0 +1,71 @@
+================================================================================
+DRISHTISETU CLINICAL RETINAL SCREENING REPORT
+Positioning: Explainable AI for Diabetic Retinopathy Screening in Rural India
+================================================================================
+Case ID:                 DS-20260923-E963
+Patient Pseudo-ID:       P-LIVE-D3889
+Examined Eye:            OS
+Acquisition Timestamp:   2026-09-23 04:37:43
+Camera ID:               Field-Portable-PHC-1
+--------------------------------------------------------------------------------
+IMAGE QUALITY:
+  Quality Status:        GOOD
+  Numerical Score:       100.0 / 100
+  Enhancement Applied:   false
+--------------------------------------------------------------------------------
+DIABETIC RETINOPATHY GRADING:
+  ICDR Severity Grade:   2 - Moderate NPDR (Level 2)
+  Referable DR Status:   true
+  Calibrated DR Risk:    72.35%
+  Softmax Probabilities: [0.008, 0.152, 0.681, 0.152, 0.008]
+  Model Calibration:     Temperature scaling (T = 2.1414)
+--------------------------------------------------------------------------------
+SAFETY & UNCERTAINTY GATING:
+  Confidence Score:      35.82%
+  Uncertainty Score:     75.12%
+  Out-Of-Distribution:   false
+  Safety Status:         HUMAN_REVIEW_REQUIRED
+  Review Mandatory:      true
+--------------------------------------------------------------------------------
+LESION & ANATOMICAL FINDINGS (M05 & M06):
+  Microaneurysms:        102 candidates
+  Haemorrhages:          15 candidates
+  Hard Exudates:         326 candidates
+  Soft Exudates:         82 candidates
+  Total Lesion Count:    765
+  Total Lesion Area:     113012.0 pixels
+  Macular Threat (<1DD): 21 candidates
+  Retinal Quadrants:     ST: 227, IT: 533, SN: 0, IN: 5
+  Retinal Vessel Density:14.60%
+--------------------------------------------------------------------------------
+ADVANCED 3D VASCULAR VISUALIZATION (M13 - Decoupled):
+  3D Status:             COMPLETED
+  Elevation Span:        386.6 microns
+  Reconstruction Mode:   FUNDUS_ESTIMATED
+--------------------------------------------------------------------------------
+EXPLANATION & DECISION SUPPORT:
+AI SCREENING EVALUATION: MODERATE NPDR (LEVEL 2)
+Calibrated Referable DR Risk: 72.3%  |  Model Confidence: 35.8%  |  Uncertainty: 75.1%
+
+Retinal Lesion Evidence:
+  - Microaneurysm candidates: 102 detected across retinal vasculature.
+  - Intraretinal haemorrhages: 15 detected.
+  - Hard exudates: 326 detected (lipid deposits indicating vascular leakage).
+  - Soft exudates (cotton wool spots): 82 detected (nerve fiber layer ischemia).
+  ! High Macular Risk: Hard exudates detected within 1.0 disc diameter of the fovea (0.7 DD).
+  - Retinal vascular area density: 14.6% across illuminated field of view.
+
+Clinical Decision Support:
+  - ACTION: Human clinician review required before releasing results.
+    Flagged reasons: high-uncertainty.
+
+DISCLAIMER: DrishtiSetu is an investigational screening aid, not an autonomous diagnostic device. All referable and ambiguous cases must be evaluated by a certified eye care practitioner.
+--------------------------------------------------------------------------------
+HUMAN-IN-THE-LOOP REVIEW:
+  Review Status:         PENDING
+  Reviewer ID:           Pending Ophthalmologist Review
+  Clinician Notes:       
+--------------------------------------------------------------------------------
+DISCLAIMER & REGULATORY NOTICE:
+  Investigational Screening Decision Support. Clinician verification mandatory.
+================================================================================
