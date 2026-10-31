@@ -34,6 +34,10 @@ Retinal Anatomy (Retina, Disc, Fovea, Vessels) ◄──────────
          └──► Clinical Decision Support & Multi-Format Reporting (Vector PDF, PNG, TXT)
 ```
 
+
+
+
+
 > [!IMPORTANT]
 > **Core Clinical Pathway vs. Advanced 3D Decoupling Guarantee**:
 > The core clinical diagnostic pipeline remains strictly independent of the advanced estimated 3D subsystem. The 3D visualization operates as an independent structural research layer. If 3D reconstruction encounters resource constraints or fails, the primary DR diagnosis, safety gating, and referral dispatch proceed completely unimpeded.
